@@ -2,7 +2,13 @@ What happens when you initialize a respository? why you need to do it?
 
 When initializing it will create the .git file and create the repositorty , which stores the meta data
 .git file needed to be created to store meta data 
-
+When I create a repository, Git creates a directory vhere it will keep track
+of all the versions that I save.  Creating the repository also lets Git know
+that I want all the files in this directory to be tracked together, but
+separately from files in different directories.  If I didn't create the
+repository, Git could create the directory to save the versions in
+automatically, but it wouldn't know which files I wanted to track together
+and which I wanted to track separately.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
@@ -12,9 +18,24 @@ using git init above. but git allow us to use a staging area to add only the fil
 we want to commit by command git add.Staging area is in between directory and the respository. 
 Then from staging area we can commit all the files we want to the repository
 
+The staging area is an intermediate area where I can add changes before
+committing them to the repository.  This allows me to add changes to the
+staging area one-by-one, then commit them all at once, which makes it easier
+to specify what changes should go into each commit.  That makes the commits
+more valuable, since the commit history is easier to navigate when I create
+one commit per logical change.
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+If I've made more than one logical change since committing, I can add all
+the changes affected by the first logical change to the staging area, then
+commit those without committing the others.
+
+
+
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
