@@ -54,6 +54,10 @@ them all.
 
 
 How do the diagrams help you visualize the branch structure?
+The diagrams show what the parent of each commit is.  When there are
+multiple branches, I can use the diagrams to easily see what changes will be
+part of each branch.  They also let me easily see what commit each branch
+refers to.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
